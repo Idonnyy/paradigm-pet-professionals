@@ -9,25 +9,104 @@
     <body> 
 
         <header>
+
             <div class="header-title"> 
-            <h1>Welcome to Paradigm Pet Professionals</h1>
-            <h2>Evidence-based pet care advice for every pet lover</h2>
+                <h1>Welcome to Paradigm Pet Professionals</h1>
+                <h2>Evidence-based pet care advice for every pet lover</h2>
             </div>
+
             <div class="logo">
                 <img src="logo.png" alt="Paradigm Pet Professionals Logo">
             </div>
+
             <div class="header-slogan">
+                <img src="slogan.png" alt="Slogan Image">
                 <p>Paradigm Pet Professionals has 12 years’ 
                     experience working with pet owners,
                     certifications in pet health and nutrition,
                     and customer recognition for outstanding support</p>
             </div>
+            <div class="header-nav">
+                <h2 class="page_name">Home</h2>
+                <nav>
+                    <ul>
+                        <li><ul>Menu
+                            <li>Pets</li>
+                            <li>FAQ</li>
+                            <li>About Paradigm</li>
+                            <li>Services</li>
+                            <li>Pexpert Contact Form</li>
+                            <li>Resource Links</li>
+                        </ul></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><ul><a href="pets.html">Pets</a><li>Pet List</li><li>Dogs</li><li>Cats</li></ul></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
 
+                    </ul>
+                    <p id="page-id"></p>
+                </nav>
+            </div>
         </header>
         <main>
-            <section>
-                <h2>Home</h2>
-                <p>Overview.</p>
+            <section class="Overview">
+                <p>Pets are nature's gift to humanity. It has been scientifically proven that opening our homes and hearts to a pet increases our longevity and improves our overall quality of life as well as the lives of our pets. At Pet Paradigm Professionals, our mission is to offer resources to help you care for your furry, scaly, feathery, and slimy loved ones. Our pet experts—or “Pexperts”—have been working with pet owners and professionals alike for the past twelve years. They offer one-on-one consultations with current and prospective pet owners as well as group presentations designed for veterinary, pet shelter, and pet breeding professionals.
+ 
+Looking for basic pet care advice for the most common type of pets? Need additional help determining which type of pet is right for you and your family? We will work with you and provide tailored evidence-based pet care to ensure lifelong health and wellness of your new companion.
+                </p>
+            </section>
+
+            <section class = "animal_carasoul"></section>
+
+            <section class="Resources">
+                <p>Looking for your new best friend? The following organizations can help you find and adopt the perfect companion:
+·       General Pet Resources: https://bestfriends.org/pet-care-resources/issues/pet-adoption-resources
+                    
+·       ASPCA: https://www.aspca.org/
+·       Fish Rescue: https://www.sterlingshelter.org/humane-society/koi-fish-rescue/
+·       Snake Rescue: https://savethesnakes.org/snakerescuecall/
+·       Bird Rescue: https://ftlob.rescuegroups.org/</p>
+            </section>
+
+<form class="consultation_form" action="submit_form.php" method="post">
+    <label for="first_name" required>First Name:</label>
+    <input type="text" id="first_name" name="first_name" required>
+
+    <label for="last_name" required>Last Name:</label>
+    <input type="text" id="last_name" name="last_name" required><br>
+
+    <label for="email" required>Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone_number" required>Phone Number:</label>
+    <input type="tel" id="phone_number" name="phone_number" required><br>
+
+    <label for="pet_name" required>Pet Name:</label>
+    <input type="text" id="pet_name" name="pet_name" required>
+     <label for="pet_type" type="selection" required>Pet Type:</label>
+    <select id="pet_type" name="pet_type" required>
+        <option value="">Select a pet type</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="bird">Bird</option>
+        <option value="reptile">Reptile</option>
+    </select>
+    
+    <br>
+
+   
+
+    <label for="message" required>Message:</label>
+    <textarea id="message" name="message" required></textarea>
+
+
+
+    <button type="submit">Submit</button>
+</form>
+
+            <section class="Pexpert">
+                <img src="pexpert.jpg" alt="Pexpert Image">
+                <button>Connect with a Pexpert</button>
             </section>
             
         </main>
